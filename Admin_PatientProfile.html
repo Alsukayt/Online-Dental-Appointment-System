@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="Admin_PatientProfile.css">
+</head>
+<body>
+
+
+<nav class="topnav">
+    <a class="active" href="HomePage.html">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="Appointment.html">Appointment</a>
+    <a href="patient.html">Patient</a>
+    <div class="search_container">
+        <form action="">
+            <input type="text" placeholder="Search.." name="search">
+            <button class="search" type="submit"><i class="fa fa-search"></i> Search</button>
+        </form>
+    </div>
+
+</nav>
+<div class="Profile_card">
+    <div class="profile_form">
+
+
+
+        <form action="" method="post">
+            <div class="header_form">
+                <h1>Profile</h1>
+
+            </div>
+
+            <div class="form-body">
+
+                <!-- Firstname and Lastname -->
+                <div class="horizontal-group">
+                    <div class="form-group left">
+                        <label for="firstname" class="label-title">First name *</label>
+                        <br>
+                        <input type="text" id="firstname" class="form-input" placeholder="enter your first name" />
+                    </div>
+                    <div class="form-group right">
+                        <label for="lastname" class="label-title">Last name</label>
+                        <br>
+                        <input type="text" id="lastname" class="form-input" placeholder="enter your last name" />
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                    <label  class="label-title">Email*</label>
+                    <br>
+                    <input type="email" id="email-form" class="form-input" placeholder="enter your email" >
+                </div>
+
+                <!-- Mobile -->
+                <div class="horizontal-group">
+                    <div class="form-group left">
+                        <label class="label-title">Mobile *</label>
+                        <br>
+                        <input type="text" id="mobile" class="form-input" placeholder="enter your mobile" >
+                    </div>
+                </div>
+
+                <!-- Gender-->
+                <div class="horizontal-group">
+                    <div class="form-group left">
+                        <label class="label-title">Gender:</label>
+                        <div class="input-group">
+                            <label for="male"><input type="radio" name="gender" value="male" id="male"> Male</label>
+                            <br>
+                            <label for="female"><input type="radio" name="gender" value="female" id="female"> Female</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label  class="label-title">Birth of Date *</label>
+                    <br>
+                    <input type="date" id="date" class="form-input" >
+                </div>
+
+
+            </div>
+            <input class="btn-form" type="button" value="Save" >
+        </form>
+
+    </div>
+</div>
+
+<div class="Appointment">
+    <h1>My Appointment</h1>
+    <table border="1" ID="table">
+        <tr>
+            <th>Doctor Name</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Canceling</th>
+
+
+        </tr>
+        <tr>
+            <td>Mohammed</td>
+            <td>2022/5/10</td>
+            <td>4:30 am</td>
+            <td><button>Cancel</button></td>
+        </tr>
+
+    </table>
+
+</div>
+
+
+
+<!--footer-->
+
+
+<footer class="footer-distributed">
+
+    <div class="footer-left">
+
+        <h3>Yake<span>System</span></h3>
+
+        <p class="footer-links">
+            <a href="HomePage.html">Home</a>
+            ·
+            <a href="Appointment.html">Appointment</a>
+            ·
+            <a href="patient.html">Patient</a>
+            ·
+            <a href="#">About</a>
+            ·
+            <a href="#">Contact</a>
+        </p>
+
+
+
+        <div class="footer-icons">
+
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-github"></i></a>
+
+        </div>
+
+    </div>
+
+    <div class="footer-right">
+
+        <p>Contact Us</p>
+
+        <form action="#" method="post">
+
+            <input type="text" name="email" placeholder="Email">
+            <textarea name="message" placeholder="Message"></textarea>
+            <button>Send</button>
+
+        </form>
+
+    </div>
+
+</footer>
+
+</body>
+</html>

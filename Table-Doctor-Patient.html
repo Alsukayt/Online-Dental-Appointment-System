@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .Appointment {
+            width: 100%;
+            /*  border: 2px solid red;*/
+            margin-top: 50px;
+            height: 300px;
+            text-align: center;
+        }
+        
+        .table {
+            /* border: 1px solid black;
+             border-collapse: collapse;
+            width: 700px;
+            margin-right: 500px;
+            background-color: #fdfdfd;*/
+            border-collapse: collapse;
+            width: 100%;
+            background-color: white;
+            color: black;
+        }
+        
+        .table th,
+        td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .table tr:hover {
+            background-color: #675EF3;
+            color: white;
+        }
+        
+        .Appointment h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Appointment">
+        <h1>My Appointment for patient</h1>
+        <table border="1" class="table">
+            <tr>
+                <th>Doctor Name</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>status</th>
+                <th>Canceling</th>
+
+
+            </tr>
+            <tr>
+                <td>Mohammed</td>
+                <td>2022/5/10</td>
+                <td>4:30 PM</td>
+                <td>approved</td>
+                <td><button>Cancel</button></td>
+            </tr>
+
+        </table>
+
+        <div class="Appointment">
+            <h1>My Appointment for doctor</h1>
+            <table border="1" class="table">
+                <tr>
+                    <th>Patient Name</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>status</th>
+                    <th>Update</th>
+
+
+                </tr>
+                <tr>
+                    <td>Mohammed</td>
+                    <td>2022/5/10</td>
+                    <td>4:30 PM</td>
+                    <td><select>
+                    <option>approve</option>
+                    <option>Reject</option>
+                    <option>In Process</option>
+                </select></td>
+                    <td><button>Update</button></td>
+                </tr>
+
+            </table>
+        </div>
+</body>
+
+</html>
